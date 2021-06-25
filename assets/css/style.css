@@ -21,6 +21,7 @@ body {
     text-align: center;
     font-size: clamp(2rem, 7vw, 4.5rem);
     padding: 10rem 0 ;
+    font-weight: 700;
 }
 
 .currencies__container {
@@ -30,18 +31,15 @@ body {
 }
 
 .user__input {
+    font-weight: 700;
     max-width: 10rem;
-    font-size: .9rem;
+    font-size: 1rem;
     padding: .5rem 1rem;
     border-radius: 5px;
     box-shadow: 01px 1px 5px #000;
     outline: none;
     border: none;
     text-align: center;
-}
-
-.user__input:focus {
-    border: 2px solid #d0dbe0;
 }
 
 .select-form {
