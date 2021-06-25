@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de moeda</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">
+                Conversor de Moeda
+            </h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="currencies__container">
+                <input type="number" min="1" class="user__input" value="1" autofocus>
+                <select class="currency__one select-form">
+                    <option value="">USD</option>
+                </select>
+                <i class="fas fa-exchange-alt"></i>
+                <select class="currency__two select-form">
+                    <option value="">BRL</option>
+                </select>
+            </div>
+            <div class="results__container">
+                <p class="converted__value">
+                    $101
+                </p>
+                <p class="linebase__result">
+                    1 USD = 5 BRL
+                </p>
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
