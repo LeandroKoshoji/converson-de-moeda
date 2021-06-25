@@ -24,7 +24,7 @@ const fetchData = async currency => {
     const response = await fetch(getUrl(currency))
     const data = await response.json()
 
-    if (data.result === 'error') {
+    if (data['error-type']) {
       throw new Error(getErrorMessage(data['error-type']))
     }
 
@@ -61,10 +61,10 @@ const multiplyRates = () => {
 }
 
 const updateRatesIntoDOM = () => {
-  const baseRate = internalExchangeRateData.conversion_rates[currencyTwoEl.value]
+  const targetRate = internalExchangeRateData.conversion_rates[currencyTwoEl.value]
 
-  convertedValueEl.textContent = `${(userInputEl.value * baseRate).toFixed(2)} ${currencyTwoEl.value}`
-  lineBaseEl.textContent = `1 ${currencyOneEl.value} = ${baseRate.toFixed(2)} ${currencyTwoEl.value}`
+  convertedValueEl.textContent = `${(userInputEl.value * targetRate).toFixed(2)} ${currencyTwoEl.value}`
+  lineBaseEl.textContent = `1 ${currencyOneEl.value} = ${targetRate.toFixed(2)} ${currencyTwoEl.value}`
 }
 
 const invertCurrencyValues = ()=> {
