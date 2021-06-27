@@ -80,16 +80,14 @@ invertButton.addEventListener('click', async ()=> {
   updateRatesIntoDOM() 
 })
 
-userInputEl.addEventListener('input', multiplyRates)
-
-currencyTwoEl.addEventListener('input', updateRatesIntoDOM)
-
 currencyOneEl.addEventListener('input', async event => {
   const inputValue = event.target.value
 
   internalExchangeRateData = { ...(await fetchData(inputValue)) }
-
   updateRatesIntoDOM()
 })
+
+userInputEl.addEventListener('input', multiplyRates)
+currencyTwoEl.addEventListener('input', updateRatesIntoDOM)
 
 init()
