@@ -4,21 +4,21 @@
   </a>   
 </div>
 
-# Conversor de moedas
+# Currency Converter
 
-Aplicação responsável por converter e exibir diferentes moedas, utilizando a API [ExchangeRate](https://www.exchangerate-api.com/)
+Application responsible for converting and displaying different currencies using the API [ExchangeRate](https://www.exchangerate-api.com/)
 
-## Tecnologias Utilizadas
+## Technologies Used
 - HTML;
 - CSS;
 - JavaScript;
 
 ## Links
 
-Clique [aqui](https://conversor-moedas-cjrm.netlify.app/) para acessar a aplicação.
+Click [Here](https://conversor-moedas-cjrm.netlify.app/) to access the application.
 
 ---
-<p align="center">Desenvolvido por Leandro Koshoji Araujo</p>
+<p align="center">Developed by <strong>Leandro Koshoji Araujo</strong></p>
 
 <p align="center">
    📫 leandrokoshoji@gmail.com
